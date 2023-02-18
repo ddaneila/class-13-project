@@ -14,7 +14,7 @@ function preload(){
   red_balloonImage = loadImage("red_balloon0.png");
   // red_balloonImage = loadImage("redballoon0.png");
   // red_balloonImage = loadImage("red_balloon0");
-  // red_balloonImage = loadImage("red_balloon0.png");
+  //red_balloonImage = loadImage("red_balloon0.png");
   
 }
 
@@ -59,7 +59,7 @@ function draw() {
   var select_balloon = Math.round(random(1,4));
   // var select_balloon = random(1,4);
   // var select_balloon = Math.round(random());
-//   var select_balloon = Math.round(random(1,4,2));
+  // var select_balloon = Math.round(random(1,4,2));
   
   if (World.frameCount % 100 == 0) {
     if (select_balloon == 1) {
@@ -89,13 +89,13 @@ function draw() {
   arrow.scale = 0.3;
 }
 
-function redBalloon() {
-  var red = createSprite(0,50, 10, 10);
-  red.addImage(red_balloonImage);
-  red.velocityX = 3;
-  red.lifetime = 150;
-  red.scale = 0.1;
-}
+// function redBalloon() {
+//   var red = createSprite(0,50, 10, 10);
+//   red.addImage(red_balloonImage);
+//   red.velocityX = 3;
+//   red.lifetime = 150;
+//   red.scale = 0.1;
+// }
 
 // function redBalloon() {
 //   var red = createSprite(,Math.round(random(20, 370)),50, 10, 10);
@@ -121,13 +121,13 @@ function redBalloon() {
 //   red.scale = 0.1;
 // }
 
-// function blueBalloon() {
-//   var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
-//   blue.addImage(blue_balloonImage);
-//   blue.velocityX = 3;
-//   blue.lifetime = 150;
-//   blue.scale = 0.1;
-// }
+function blueBalloon() {
+  var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
+  blue.addImage(blue_balloonImage);
+  blue.velocityX = 3;
+  blue.lifetime = 150;
+  blue.scale = 0.1;
+}
 
 function greenBalloon() {
   var green = createSprite(0,Math.round(random(20, 370)), 10, 10);
